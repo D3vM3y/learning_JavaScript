@@ -5,20 +5,12 @@
 const COLOR_ORANGE = "#FF7F00";
 
 
-// tasks to train your knowledge on variables
-// Working with variables
-// 1. Declare two variables: admin and firstName.
-let admin;
-let firstName;
-// 2. Assign the value "John" to firstName.
-firstName = "John";
-// 3. Copy the value from firstName to admin.
-admin = firstName;
-// 4. Show the value of admin using alert (must output “John”).
-alert("Admin: " + admin);
+// tasks to train your knowledge on data types
+// What is the output
+let name = "Ilya";
 
-// Giving the right name
-// 1. Create a variable with the name of our planet. How would you name such a variable?
-let planetEarth;
-// 2. Create a variable to store the name of a current visitor to a website. How would you name that variable?
-let currentUser;
+alert( `hello ${1}` ); // ? >> hello 1
+
+alert( `hello ${"name"}` ); // ? >> hello name
+
+alert( `hello ${name}` ); // ? >> hello Ilya
