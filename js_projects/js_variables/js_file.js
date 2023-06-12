@@ -1,5 +1,6 @@
 "use strict";
-
+// =================
+// === Variables ===
 // written in capital letters and using underscore because I use a constant as an alias for a difficult-to-remember value, which is known prior the code execution
 const COLOR_ORANGE = "#FF7F00";
 
