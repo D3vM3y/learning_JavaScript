@@ -61,3 +61,65 @@ for (key in newObj){
 
 // Objects in JavaScript are very powerful. Here we’ve just scratched the surface of a topic that is really huge. We’ll be closely working with objects and learning more about them in further parts of the tutorial.
 
+// ====== Tasks =====
+// == Hello Object ==
+// Write the code, one line for each action:
+// 1. Create an empty object user.
+let user = {};
+// 2. Add the property name with the value John.
+user.name = "John";
+// 3. Add the property surname with the value Smith.
+user.surname = "Smith";
+// 4. Change the value of the name to Pete.
+user.name = "Pete"
+// 5. Remove the property name from the object.
+delete user.name;
+
+// == Check for emptiness ==
+// Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+function isEmpty(obj){
+    for(key in obj){
+        return false;
+    }
+    return true;
+}
+
+// == Sum object properties ==
+// We have an object storing salaries of our team:
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  }
+
+// Write the code to sum all salaries and store in the variable sum. Should be 390 in the example above.
+// If salaries is empty, then the result must be 0.
+
+function sumSalaries(salaries){
+    let sum = 0;
+
+    for(key in salaries) {
+     sum+=salaries[key];
+    }
+    return sum;
+}
+
+// == Multiply numeric property values by 2 ==
+// Create a function multiplyNumeric(obj) that multiplies all numeric property values of obj by 2.
+// Please note that multiplyNumeric does not need to return anything. It should modify the object in-place.
+
+// P.S. Use typeof to check for a number here.
+
+
+function multiplyNumeric(obj) {
+    for (let key in obj) {
+        if(obj[key] == typeof('number')){
+            obj[key] *= 2;
+        }
+    }
+}
+
+
+
+
+
