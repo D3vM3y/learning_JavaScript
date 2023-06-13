@@ -14,3 +14,6 @@ alert( `hello ${1}` ); // ? >> hello 1
 alert( `hello ${"name"}` ); // ? >> hello name
 
 alert( `hello ${name}` ); // ? >> hello Ilya
+
+// asking for your name and outputting it to the console
+console.log(prompt("What is your name?"));
