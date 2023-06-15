@@ -51,6 +51,46 @@ let isMember = true;
         console.log(`for..of loop: ${fruit}`);
     }
 
+    //=== Tasks ===
+        //1. Is array copied?
+        //What is this code going to show?
+        // let fruits = ["Apples", "Pear", "Orange"];
+
+        // push a new value into the "copy"
+        // let shoppingCart = fruits;
+        // shoppingCart.push("Banana");
+
+        // what's in fruits?
+        // alert( fruits.length ); // 4
+
+
+        // 2. Let’s try 5 array operations.
+
+            // 1. Create an array styles with items “Jazz” and “Blues”.
+            let musicGenre = ["Jazz","Blues"];
+            console.log(`1: ${musicGenre}`);
+            // 2. Append “Rock-n-Roll” to the end.
+            musicGenre.push("Rock-n-Roll");
+            console.log(`2: ${musicGenre}`);
+            // 3. Replace the value in the middle with “Classics”. Your code for finding the middle value should work for any arrays with odd length.
+            musicGenre[Math.floor(musicGenre.length / 2)] = "Classics";    
+            console.log(`3: ${musicGenre}`);
+            // 4. Strip off the first value of the array and show it.
+            console.log(`Stripped element: ${musicGenre.shift()}`);
+            console.log(`4: ${musicGenre}`);
+            // 5. Prepend Rap and Reggae to the array.
+            musicGenre.unshift("Rap", "Reggae");
+            console.log(`5: ${musicGenre}`);            
+
+            
+            // The array in the process:
+
+            // 1. Jazz, Blues
+            // 2. Jazz, Blues, Rock-n-Roll
+            // 3. Jazz, Classics, Rock-n-Roll
+            // 4. Classics, Rock-n-Roll
+            // 5. Rap, Reggae, Classics, Rock-n-Roll
+
 // functions
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
