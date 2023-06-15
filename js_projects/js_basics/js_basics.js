@@ -91,6 +91,68 @@ let isMember = true;
             // 4. Classics, Rock-n-Roll
             // 5. Rap, Reggae, Classics, Rock-n-Roll
 
+        // 3. Calling in an array context
+            // What is the result? Why?
+            // let arr = ["a", "b"];
+
+            // arr.push(function() {
+            // alert( this );
+            // });
+
+            // arr[2](); // ? >> a,b,function(){...}
+        
+        // 4. Sum input numbers
+            // Write the function sumInput() that:
+            // - Asks the user for values using prompt and stores the values in the array.
+            // - Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+            // - Calculates and returns the sum of array items.
+            
+            // P.S. A zero 0 is a valid number, please don’t stop the input on zero.
+
+            function sumInput(){
+                let numbers = [];
+                
+                while(true){
+                    let askedValue = prompt("add a number", 0);
+                    
+                    //test for cancel
+                    if(askedValue === null || askedValue === "" || !isFinite(askedValue)) {
+                        break;
+                    }
+
+                    numbers.push(+askedValue);
+                }
+                
+                let sum = 0;
+                for (let number of numbers) {
+                    sum += number;
+                }
+                return sum;
+            }
+
+            sumInput();
+
+
+        // 5. A maximal subarray
+            // The input is an array of numbers, e.g. arr = [1, -2, 3, 4, -9, 6].
+
+            // The task is: find the contiguous subarray of arr with the maximal sum of items.
+
+            // Write the function getMaxSubSum(arr) that will return that sum.
+
+            // For instance:
+
+            // getMaxSubSum([-1, 2, 3, -9]) == 5 (the sum of highlighted items)
+            // getMaxSubSum([2, -1, 2, 3, -9]) == 6
+            // getMaxSubSum([-1, 2, 3, -9, 11]) == 11
+            // getMaxSubSum([-2, -1, 1, 2]) == 3
+            // getMaxSubSum([100, -9, 2, -3, 5]) == 100
+            // getMaxSubSum([1, 2, 3]) == 6 (take all)
+            // If all items are negative, it means that we take none (the subarray is empty), so the sum is zero:
+
+            // getMaxSubSum([-1, -2, -3]) = 0
+            // Please try to think of a fast solution: O(n2) or even O(n) if you can.
+
 // functions
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
