@@ -46,7 +46,10 @@ let isMember = true;
       }
 
     //for..of loop
-    
+    // for..of loop does not return the current number of the element but its value. Its shorter and faster to use and in most cases enough.
+    for(let fruit of fruits){
+        console.log(`for..of loop: ${fruit}`);
+    }
 
 // functions
     //basic function to populate the object keys with values
