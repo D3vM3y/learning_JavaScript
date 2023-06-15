@@ -24,6 +24,20 @@ let isMember = true;
     // adding the user to the users array
     users[0] = user;
     
+    //Methods pop/push, shift/unshift
+    // push >> appends element to the end
+        users.push(addUserInfo("Sandra", "Miller", "2789", "sandra.miller@gmail.com", "+7823197804"));
+        users.push(addUserInfo("Richard", "Miller", "2790", "richard.miller@gmail.com", "+7823197804"));
+    // pop >> takes the element from the end and returns it
+        let extractedUser = users.pop();
+    // shift >> extract the first element of the array and return it
+        users.shift();
+    // unshift >> add an element to the beginning of the array
+        users.unshift(extractedUser);
+
+
+
+
 // functions
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
@@ -38,21 +52,12 @@ let isMember = true;
 
         return newUser;
     }
-
-    // adding single user to array users
-    function addUserToUsers(users, newUser){
-        users[users.length] = newUser;
-    }
-
+    
 
     // calling the addUserInfo function to populate the user object
     addUserInfo(firstName,lastName,id,email,phone,isMember);
 
-    //adding a new user to the database array users
-    addUserToUsers(users, addUserInfo("Sandra", "Miller", "2789", "sandra.miller@gmail.com", "+7823197804"));
-    addUserToUsers(users, addUserInfo("Richard", "Miller", "2790", "richard.miller@gmail.com", "+7823197804"));
-
-    console.log(users);
+console.log(users);
 
 // classes
 // loops
