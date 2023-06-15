@@ -25,7 +25,7 @@ let isMember = true;
     users[0] = user;
     
     //Methods pop/push, shift/unshift
-    // push >> appends element to the end
+    // push >> appends element to the end (here we use the helper function addUserInfo to populate the array faster)
         users.push(addUserInfo("Sandra", "Miller", "2789", "sandra.miller@gmail.com", "+7823197804"));
         users.push(addUserInfo("Richard", "Miller", "2790", "richard.miller@gmail.com", "+7823197804"));
     // pop >> takes the element from the end and returns it
@@ -35,8 +35,18 @@ let isMember = true;
     // unshift >> add an element to the beginning of the array
         users.unshift(extractedUser);
 
+// loops
+    // for loop
+    let fruits = ["banana", "apple", "orange", "Plum", "Pear"];
+    
+    console.log(`Fruits array: ${fruits}`);
 
+    for (let i = 0; i < fruits.length; i++) {
+        console.log(`for loop: ${fruits[i]}`);
+      }
 
+    //for..of loop
+    
 
 // functions
     //basic function to populate the object keys with values
@@ -52,14 +62,9 @@ let isMember = true;
 
         return newUser;
     }
-    
 
-    // calling the addUserInfo function to populate the user object
-    addUserInfo(firstName,lastName,id,email,phone,isMember);
-
-console.log(users);
 
 // classes
-// loops
+
 // Modules
 // Promises, async/await
