@@ -130,7 +130,7 @@ let isMember = true;
                 return sum;
             }
 
-            sumInput();
+            // sumInput();
 
 
         // 5. A maximal subarray
@@ -152,7 +152,24 @@ let isMember = true;
 
             // getMaxSubSum([-1, -2, -3]) = 0
             // Please try to think of a fast solution: O(n2) or even O(n) if you can.
+            newArr = [1, -3, 2, 1, -1];
 
+            function getMaxSubSum(arr){
+                let maxSum = 0;
+                let currentSum = 0;
+
+                for(let num in arr){
+                    currentSum += num;
+                    maxSum = Math.max(maxSum, currentSum);
+                    if(currentSum < 0){
+                        currentSum = 0;
+                    }
+
+                    return maxSum;
+                }
+            }
+
+            getMaxSubSum(newArr);
 // functions
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
