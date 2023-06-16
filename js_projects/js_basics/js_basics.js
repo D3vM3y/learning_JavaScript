@@ -61,9 +61,20 @@ let isMember = true;
     // Example
     let i = 0;
     while(i <= 4){
-        console.log(`Iteration ${i}: ${i}`);
+        console.log(`Iteration (while loop) ${i}: ${i}`);
         i++;
     }
+
+    // do...while loop
+    // do {
+        // loop body
+    // } while (condition);
+
+    // Example
+    do {
+        console.log(`Iterations (do...while loop): ${i}`);
+        i++;
+    }while(i<=4);
 
     //=== Tasks ===
         //1. Is array copied?
