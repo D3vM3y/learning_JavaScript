@@ -51,6 +51,20 @@ let isMember = true;
         console.log(`for..of loop: ${fruit}`);
     }
 
+    //while loop
+    // Syntax:
+    // while (condition) {
+        // code
+        // so-called "loop body"
+    // }
+
+    // Example
+    let i = 0;
+    while(i <= 4){
+        console.log(`Iteration ${i}: ${i}`);
+        i++;
+    }
+
     //=== Tasks ===
         //1. Is array copied?
         //What is this code going to show?
