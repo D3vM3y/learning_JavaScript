@@ -196,6 +196,7 @@ let isMember = true;
 
             getMaxSubSum(newArr);
 // functions
+// https://javascript.info/function-basics
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
         let newUser = {
@@ -210,8 +211,14 @@ let isMember = true;
         return newUser;
     }
 
+// Arrow functions
+    // https://javascript.info/arrow-functions-basics
+
 
 // classes
+    // https://javascript.info/classes
 
 // Modules
+    // https://javascript.info/modules
 // Promises, async/await
+    // https://javascript.info/async
