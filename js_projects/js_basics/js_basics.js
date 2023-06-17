@@ -196,6 +196,21 @@ let isMember = true;
 
             getMaxSubSum(newArr);
 // functions
+// Functions are actions and therefore should be brief and accurate in naming.
+// Function starting with…
+    // "get…" – return a value,
+    // "calc…" – calculate something,
+    // "create…" – create something,
+    // "check…" – check something and return a boolean, etc.
+
+// A function should do exactly what is suggested by its name, no more.
+// Two independent actions usually deserve two functions, even if they are usually called together (in that case we can make a 3rd function that calls those two).
+
+
+
+
+
+
 // https://javascript.info/function-basics
     //basic function to populate the object keys with values
     function addUserInfo(firstName, lastName, id, email, phone, isMember){
