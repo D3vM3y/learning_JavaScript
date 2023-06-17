@@ -206,6 +206,62 @@ let isMember = true;
 // A function should do exactly what is suggested by its name, no more.
 // Two independent actions usually deserve two functions, even if they are usually called together (in that case we can make a 3rd function that calls those two).
 
+// Function Tasks
+// 1. Is "else" required?
+// The following function returns true if the parameter age is greater than 18.
+
+// Otherwise it asks for a confirmation and returns its result:
+        // function checkAge(age) {
+        //   if (age > 18) {
+        //     return true;
+        //   } else {
+        //     // ...
+        //     return confirm('Did parents allow you?');
+        //   }
+        // }
+
+// Will the function work differently if else is removed?
+        // function checkAge(age) {
+        //   if (age > 18) {
+        //     return true;
+        //   }
+        //   // ...
+        //   return confirm('Did parents allow you?');
+        // }
+// Is there any difference in the behavior of these two variants?
+// No difference!
+
+// In both cases, return confirm('Did parents allow you?') executes exactly when the if condition is falsy.
+
+// 2. Rewrite the function using "?" or "||"
+// The following function returns true if the parameter age is greater than 18.
+
+// Otherwise it asks for a confirmation and returns its result.
+        // function checkAge(age) {
+        //   if (age > 18) {
+        //     return true;
+        //   } else {
+        //     return confirm('Did parents allow you?');
+        //   }
+        // }
+
+// Rewrite it, to perform the same, but without if, in a single line.
+
+// Make two variants of checkAge:
+
+// Using a question mark operator ?
+// Using OR ||
+
+// Solution 
+// function checkAge(age){
+//     return age > 18 || confirm("Did parents allow you?");
+// }
+
+// function checkAge(age){
+//     return age > 18 ? true : confirm("Did parents allow you?");
+// }
+
+
 
 
 
