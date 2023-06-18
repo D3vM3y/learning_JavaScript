@@ -327,6 +327,35 @@ let isMember = true;
 
 // classes
     // https://javascript.info/classes
+    // The basic class syntax is:
+    // class MyClass {
+    //     // class methods
+    //     constructor() { ... }
+    //     method1() { ... }
+    //     method2() { ... }
+    //     method3() { ... }
+    //     ...
+    //   }
+
+    // Then use new MyClass() to create a new object with all the listed methods.
+    // The constructor() method is called automatically by new, so we can initialize the object there.
+
+    // For example:
+    // class User {
+
+    //     constructor(name) {
+    //       this.name = name;
+    //     }
+      
+    //     sayHi() {
+    //       alert(this.name);
+    //     }
+      
+    //   }
+      
+    // Usage:
+    //   let user = new User("John");
+    //   user.sayHi();
 
 // Modules
     // https://javascript.info/modules
