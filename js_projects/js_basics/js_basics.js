@@ -6,7 +6,7 @@ let email = "chandler.smith@gmail.com";
 let phone = "+1798083804";
 let isMember = true;
 
-// objects
+// === Objects ===
     // create basic object
     const person = {
         name: "Jack",
@@ -20,6 +20,24 @@ let isMember = true;
     const {name, age, isMarried} = person;    // creates variables that are coresponding to the variables inside the object
     console.log("Person: " + name);
     console.log("Another person: " + anotherPerson.name);
+
+// === Arrays ===
+let names = ["Jack", "Harry", "Sarah"];
+
+// Array functions
+ const personFound = names.map((name) => {
+    const personFound = name === "Sarah"; //is the name equal to Sarah?
+    let person = personFound == true ? `Yes, its ${name}!` : "No, no one was found!"; // if the name is equal to Sarah print condition one otherwise condition two
+    return person;
+  });
+
+  console.log("Is the person found: " + personFound);
+
+//   names.filter();
+//   names.reduce();
+
+
+
 // Arrays
     // create array to hold multiple users
     let user = {};
