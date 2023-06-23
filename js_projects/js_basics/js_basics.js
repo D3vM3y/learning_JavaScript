@@ -321,6 +321,19 @@ let isMember = true;
         return newUser;
     }
 
+// The conditional ternary operator
+// It is used as an alternative to the if...else statement
+// Syntax: 
+    // condition ? expression if true : expression if false
+// Example:
+    // const age = 26;
+    // const beverage = age >= 21 ? "Beer" : "Juice";
+    // console.log(beverage); // "Beer"
+
+// if
+// if else
+// 
+
 // Arrow functions
     // https://javascript.info/arrow-functions-basics
 
@@ -384,6 +397,12 @@ let isMember = true;
     //   alert(user.name); // John
       
     //   user = new User(""); // Name is too short.
+
+    // Classes Tasks
+    // 1. Rewrite to class
+    // The Clock class (see the sandbox) is written in functional style. Rewrite it in the “class” syntax.
+    // https://plnkr.co/edit/MmhvN3wn0sUBqjwR?p=preview&preview
+    // P.S. The clock ticks in the console, open it to see.
 
 // Modules
     // https://javascript.info/modules
