@@ -25,6 +25,7 @@ let isMember = true;
 let names = ["Jack", "Harry", "Sarah"];
 
 // Array functions
+// .map() >> maps or goes over every single element in the array
  const personFound = names.map((name) => {
     const personFound = name === "Sarah"; //is the name equal to Sarah?
     let person = personFound == true ? `Yes, its ${name}!` : "No, no one was found!"; // if the name is equal to Sarah print condition one otherwise condition two
