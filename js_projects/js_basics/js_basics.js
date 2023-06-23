@@ -320,6 +320,15 @@ let isMember = true;
 
         return newUser;
     }
+// Ternary operators
+// Shorthand notations for if statements with ternary operators
+// 1. && operator
+// let name = age > 10 && "Jack"; //name will be Jack if age is greater than. The "&&" operator means than.
+// The same example can be flipped, meaning that if the age is not greater than 10, name will be Jack
+// let name = age > 10 || "Jack"; 
+        // >>> if age > 10 >> true
+        // >>> if age < 10 >> false
+
 
 // The conditional ternary operator
 // It is used as an alternative to the if...else statement
@@ -329,6 +338,14 @@ let isMember = true;
     // const age = 26;
     // const beverage = age >= 21 ? "Beer" : "Juice";
     // console.log(beverage); // "Beer"
+
+// The ternary operator is right-associative and therefore can be chained
+// function example() {
+//     return condition1 ? value1
+//           : condition2 ? value2
+//           : condition3 ? value3
+//           : value4;
+//   }
 
 // if
 // if else
