@@ -8,17 +8,21 @@ let isMember = true;
 
 // objects
     // create basic object
-    let user = {
-        firstName: firstName,
-        lastName: lastName,
-        id: id,
-        email: email,
-        phone: phone,
-        isMember: isMember,
+    const person = {
+        name: "Jack",
+        age: 21,
+        isMarried: false,
     }
 
+    const anotherPerson = {...person, name: "Trish"}//using the spread operator which lets me keep everything inside of the person object. Everything after the comma will be changed for the new object.
+
+    // Deconstruction of  objects
+    const {name, age, isMarried} = person;    // creates variables that are coresponding to the variables inside the object
+    console.log("Person: " + name);
+    console.log("Another person: " + anotherPerson.name);
 // Arrays
     // create array to hold multiple users
+    let user = {};
     let users = [];
 
     // adding the user to the users array
@@ -328,7 +332,6 @@ let isMember = true;
 // let name = age > 10 || "Jack"; 
         // >>> if age > 10 >> true
         // >>> if age < 10 >> false
-
 
 // The conditional ternary operator
 // It is used as an alternative to the if...else statement
