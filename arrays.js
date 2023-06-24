@@ -24,7 +24,8 @@ const interestedClient = allClients.map((memberDetail) => {
 })
 
 // filter
-// reduce
+const onlyMembers = allClients.filter((members) => {
+    return members.member === true && members;
+})
 
-
-console.log(members);
+console.log(onlyMembers);
